@@ -9,7 +9,8 @@ import banana_dev as banana
 
 model_payload = {
     "youtube_url":"https://www.youtube.com/watch?v=-UX0X45sYe4",
-    "language": "en"
+    "language": "en",
+    "num_speakers": 2
 }
 
 res = requests.post("http://localhost:8000/",json=model_payload)

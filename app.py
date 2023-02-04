@@ -134,7 +134,7 @@ def inference(model_inputs:dict) -> dict:
     # Parse out your arguments
     youtube_url = model_inputs.get('youtube_url', "https://www.youtube.com/watch?v=-UX0X45sYe4")
     selected_source_lang = model_inputs.get('language', "en")
-    number_speakers = 2
+    number_speakers = model_inputs.get('num_speakers', 2)
 
     if youtube_url == None:
         return {'message': "No input provided"}
